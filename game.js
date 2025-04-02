@@ -1,7 +1,5 @@
 import { Ball } from './ball.js';
 import { Player } from './player.js';
-import { Block } from './block.js';
-
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
