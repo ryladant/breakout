@@ -9,11 +9,11 @@ export class Player{
         this.ai = ai;
     }
 
-    collision_with_ball(ball){
-        if(this.x < ball.x + ball.radius && 
-            this.x + this.width > ball.x - ball.radius && 
-            this.y < ball.y + ball.radius && 
-            this.y + this.height > ball.y - ball.radius){
+    collision_with_ball(ballX, ballY, ballRadius){
+        if(this.x < ballX + ballRadius && 
+            this.x + this.width > ballX - ballRadius && 
+            this.y < ballY + ballRadius && 
+            this.y + this.height > ballY - ballRadius){
                 return true;
         }
         return false;
